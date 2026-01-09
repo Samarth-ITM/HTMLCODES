@@ -3,14 +3,135 @@
 <head>
     <title>HTML Practice Page</title>
     <meta>
+    <style>
+        #MH{
+            text-align: center;
+            font-size:50px;
+            text-shadow: 4px 2px 4px;
+            cursor:pointer; 
+        }
+        #MH:hover{
+            color:blueviolet;
+        }
+
+        #SH{
+            color: blueviolet; 
+            letter-spacing: 5px;
+            opacity: 40%;
+            
+        }
+
+        .P1{
+            text-align: center;
+            border-radius: 90%;
+            background-color: blanchedalmond;
+            line-height: 1cm;
+            padding: 10px;
+        }
+
+        .P2{
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            border: 1cm;
+            background-color: blueviolet;
+            transform: rotate(10deg);
+        }
+        .HR{
+            background-color: yellow;
+            width:auto;
+            height: 1cm;
+            border-radius: 50%;
+
+            }
+        
+        .List{
+            background-color: brown;
+            opacity: 30%;
+            color: white;
+            list-style: georgian;
+            color:yellow
+        }
+
+        #OL{
+            font-size: larger;
+            list-style: upper-roman;
+            font-weight: bold;
+            word-spacing: 10px;
+        }
+
+        .link{
+            color:blueviolet;
+            opacity: 30%;
+            text-decoration: underline white;
+
+            
+        }
+
+        .link:hover{
+            color: blueviolet;
+            opacity: 100% ;
+            text-decoration: underline darkblue;
+        }
+
+        #DIV{
+            box-shadow: 5cm;
+            padding: 3cm;
+            text-align: center;
+            background-color: blanchedalmond;
+            border-radius: 5cm;
+            box-shadow: 1cm 1cm 1cm;
+        }
+
+        .span1{
+            font-size: 2cm;
+            color: blueviolet;
+        }
+
+        #b1{
+            text-align: center;
+            padding: 2cm;
+        }
+
+        #b2{
+            background-color: burlywood;
+            outline-color: aquamarine;
+            border-color: blue;
+            color: crimson;
+            padding: 10px 20px;
+            box-shadow: 10cm 10cm 10cm;
+            box-shadow: 5px 8px 10px;
+            border-radius: 2cm;
+        }
+        #b2:hover{
+            box-shadow: none;
+            transform: scale(-0.9);
+        }
+
+        #FEET{
+            background-color: blanchedalmond;
+            padding: 1cm;
+        }
+
+        .foot{
+            color: coral;
+            text-align: center;
+        }
+
+
+    </style>
 </head>
 <body>
     <h1 id = "MH">Main Heading</h1> 
-    <h3 style="color:blue">Sub Heading</h3>
-    <p> <b>HTML</b> <strong><em>is an</em> <strong>Hyper Text Markup <i>Language</i></strong></p>
-    <br><hr style="color:red">
 
-    <pre style="color: crimson;">
+    <h3 id= "SH">Sub Heading</h3>
+    <p class = "P1"> <b>HTML</b> <br> <strong><em>is an</em> <br><strong>Hyper Text Markup <i>Language</i></strong></p>
+    <br>
+
+    <hr class="HR">
+
+
+    <pre class= "P2" style="color: crimson;">
         H
          T
           M
@@ -22,6 +143,12 @@
           M
            L
     </pre>
+
+
+
+    <hr class="HR">
+
+
 
     <ul class = "List">
         <li>
@@ -37,7 +164,7 @@
             L
         </li>
     </ul>
-    <ol id = "ordered List">
+    <ol id = "OL">
         <li>
             H
         </li>
@@ -52,18 +179,26 @@
         </li>
     </ol>
 
-    <a href="https://www.w3schools.com/html/html_exercises.asp" target="_parent" style="color:yellow" class = "link"> W3School's HTML Exercise</a>
+        <hr class="HR">
 
-    <div>
+
+    <a href="https://www.w3schools.com/html/html_exercises.asp" target="_parent"  class = "link" > W3School's HTML Exercise</a>
+
+    <div id = "DIV">
         This is <span class="span1" style="color: blue;"> in span tag now</span> this is closed and its in div section.
     </div>
+    <br><br><br>
 
-    <button type="button" id ="button" style="background-color:darkcyan">BUTTON</button>
-
-    <footer class="footer" style="font-size: smaller;">Footer</footer>
-
+        <hr class="HR">
 
 
-    
+    <div id = "b1">
+    <button type="button" id ="b2"> BUTTON
+</button>
+
+    <hr class="HR">
+
+</div id = "FEET">
+    <footer class="foot" style="font-size: smaller;">This is Da Footer</footer>
 </body>
 </html>

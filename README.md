@@ -6,7 +6,7 @@ HTML ASSIGNMENT FRIDAY JAN16 is in the file JAN16:
 <img width="1484" height="1032" alt="image" src="https://github.com/user-attachments/assets/750f312d-16b7-4284-a56f-4ab5baa5fe60" />
 After clicking on SUBMIT:
 <img width="1484" height="1032" alt="image" src="https://github.com/user-attachments/assets/e2a1f0c6-d48c-4589-aaf9-a1303a04122d" />
-
+After clicking on Re-fill the form, you are bought back to the main page!
 
 
 

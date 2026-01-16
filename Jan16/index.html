@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+    <style>
+
+    body {
+    background-color: #fbf2ec;
+    font-family: Verdana;
+    text-align: center;
+
+
+    background-image: url("images.jpeg"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;  
+    background-color: #cccccc; 
+
+    }
+
+    #SF{
+        background-color: white;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+        border-top: 20px solid #73AD21;
+        border-left: 8px solid blueviolet;
+        background-color: deepskyblue;
+
+    }
+
+    #SF:hover{
+        border-right: 8px solid red;
+        border-bottom: 16px solid greenyellow;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    
+
+
+    .form-control {
+        background-color: lightyellow;
+        text-align: left;
+        margin-bottom: 25px;
+        padding: 50px;
+        border-radius: 10px;
+        border-left: 8px solid blueviolet;
+        border-bottom: 3px solid black;
+        border-right: 3px solid black;
+
+    }
+
+    .form-control:hover{
+        border-top: 8px solid #73AD21;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+
+
+    }
+
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+    }
+    .form-control input[type="radio"],
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+    }
+    button {
+        background-color: #05c46b;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 22cm;
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px;
+    width: 10%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    }
+
+    .submit-btn:hover {
+    background-color: #1558c0;
+    }
+
+    #form{
+        border: 2px solid black;
+        border-radius: 30px;
+        text-align: center;
+        margin-left: 4.7cm;
+        width: 65%;
+        padding: 1cm 2cm;
+        background-color: white;
+        height: 63cm;
+    }
+
+
+
+</style>
+</head>
+<body>
+
+    <div id = "SF">
+    <h1>Survey Form</h1>
+    <p>This is Samarth's Sample Survey</p>
+    </div>
+
+    <form action="success.html">
+
+        <div id = "form">
+
+        <div class="form-control">
+            <label for="name" id="label-name"><i><b>Roll Number</b></i> <span style="color: red;">*</span>
+            <embed src="/RollNo.pdf" type="application/pdf" width="100%" height="600px" title="Embedded PDF Viewer"></label>
+            <input type="text" id="name" placeholder="Enter your Roll Number" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email"><strong>College Email</strong> <small>(must end in "@isu.ac.in")</small> <span style="color: red;">*</span></label>
+            <input type="email" id="email" placeholder="Enter your email" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age"><bold><strong>Cohor</strong> <i><b>Name</b></i> <span style="color: red;">*</span></bold></label>
+            <input type="text" id="age" placeholder="Enter your Cohort Name" required/>
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role"><b>Select your</b> <strong>Year</strong></label>
+            <select name="role" id="role">
+                <option value="" disabled selected hidden>Select from the dropdown</option>
+                <option value="student">1st Year</option>
+                <option value="intern">2nd Year</option>
+                <option value="professional">3rd Year</option>
+                <option value="other">4th Year</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label><i><b>Are</b></i> <b>you</b> <strong>ded?</strong></label>
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label><strong>Subjects you have in your current stream</strong>
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">HTML
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">CSS
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Python
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">JavaScript
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">C++
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">C
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">CSF
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="inp">OS
+            </label>
+            <label for="inp-9">
+                <input type="checkbox" name="inp">Maths
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="inp">No-Code
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment"><i><u>Any comments or suggestions</u></i></label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment/suggestion here"></textarea>
+        </div>
+
+        <div id="bt">
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        </div>
+    </form>
+
+</body>
+</html>

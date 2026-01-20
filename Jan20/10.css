@@ -1,0 +1,16 @@
+@supports (display: grid) {
+  .container {
+    display: grid;
+  }
+}
+
+.container {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.A {
+  border: 2px solid black;
+  background-color: lightyellow;
+  padding: 10px;
+}

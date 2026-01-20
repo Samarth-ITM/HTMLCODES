@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS GRID INTRODUCTION</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="main" class="container">
+        <div id="1">
+            <h2>1. What is the difference between a normal div and a grid container?</h2>
+            <p>Div is just a text wrapper which can be later modified by in the CSS, it has no special function on its own rather than allowing the developer to modify the div tags.</p>
+            <p>Whereas, Grid is a grid container is an element with its display property set to grid, helping 2D layout capabilities.</p>
+        </div>
+        <div id="2">
+            <h2>2. Why does the layout look the same even after applying Grid?</h2>
+            <p>
+            The layout looks the same because setting display: grid alone does not force a visual change.
+            If no rows, columns, or gaps are defined, the browser places elements in a default flow that closely
+            resembles normal block layout.
+            </p>
+            <br>
+        </div>
+        <div id="3">
+            <h2>3. Are grid items created automatically?</h2>
+            <p>
+            Yes, grid items are created automatically. Every direct child element of a grid container becomes
+            a grid item without any additional configuration.
+            </p>
+            <br>
+        </div>
+        <div id="4">
+            <h2>4. Can Grid work without rows or columns?</h2>
+            <p>
+            Grid can work without explicitly defining rows or columns because the browser auto-generates them.
+            However, without defined tracks, Grid behaves very similarly to a normal layout and its advantages
+            are not clearly visible.
+            </p>
+            <br>
+
+        </div>
+        <div id="5">
+            <h2>5. What do you think Grid needs to show visible changes?</h2>
+            <p>
+            Grid needs explicitly defined rows, columns, or spacing to show visible changes. Properties like
+            <code>grid-template-columns</code>, <code>grid-template-rows</code>, and <code>gap</code> provide
+            structure and make the grid layout visually distinct.
+            </p>
+
+        </div>
+        <div id="6">
+
+            <h2>DIV BLOCK</h2>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.container {
+  display: grid;
+  grid-template-rows: 200px 200px;
+}
+
+.A {
+  border: 2px solid black;
+  background-color: navy;
+  padding: 10px;
+}

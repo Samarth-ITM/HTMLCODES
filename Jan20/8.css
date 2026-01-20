@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.A {
+  border: 2px solid black;
+  background-color: lightseagreen;
+  padding: 10px;
+}

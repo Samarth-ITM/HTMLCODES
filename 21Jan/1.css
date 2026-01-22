@@ -36,19 +36,17 @@ body {
 
 #m1 {
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 300px 1fr;
     gap: 20px;
-    padding: 10px;
-    
+    padding: 20px;
 }
 
 
 #a1 {
     background: floralwhite;
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
 }
-
 
 
 

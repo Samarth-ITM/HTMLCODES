@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Signal</title>
+</head>
+<body style="margin: 0;">
+    <svg width="100%" height="100vh" style="border: 1px solid black">
+    <rect x="550" y="125" width="200" height="600" fill="grey"/>
+        <circle class="red" cx="650" cy="225" r="60" fill="red"></circle>
+        <circle cx="650" cy="225" r="60" fill="red" opacity="0.25">
+            <animate attributeName="r"
+                    from="60"
+                    to="80"
+                    dur="1s"
+                    repeatCount="indefinite"/>
+        </circle>
+
+        <circle cx="650" cy="425" r="60" fill="yellow"></circle>
+        <circle cx="650" cy="425" r="60" fill="yellow" opacity="0.5">
+            <animate attributeName="r"
+                    from="60"
+                    to="80"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+        </circle>
+
+        <circle cx="650" cy="625" r="60" fill="green"></circle>
+        <circle cx="650" cy="625" r="60" fill="green" opacity="0.5">
+            <animate attributeName="r"
+                    from="60"
+                    to="80"
+                    dur="3s"
+                    repeatCount="indefinite"/>
+        </circle>
+
+    </svg>
+</body>
+</html>

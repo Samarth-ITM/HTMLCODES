@@ -1,0 +1,163 @@
+/* INDEX/HOME PAGE STYLES */
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+    height: 78vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-home,
+.feature-section {
+    background: linear-gradient(
+        135deg,
+        rgba(165, 28, 48, 0.35) 0%,
+        rgba(0, 0, 0, 0.45) 100%
+    ),
+    url('Assets/ITMbg.jpeg') center/cover fixed;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #ffffff;
+    max-width: 800px;
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+/* FEATURE SECTIONS */
+
+.feature-section {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 8%;
+    margin: 0;
+}
+
+.feature-row.light {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-row.dark {
+    background: rgba(43, 43, 43, 0.9);
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.feature-image.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    flex: 1;
+}
+
+.feature-image.grid img {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.feature-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.feature-row.dark p {
+    color: #e0e0e0;
+}
+
+/* ALUMNI SECTION (HOME PAGE) */
+
+.alumni-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.section-title {
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: normal;
+    margin-bottom: 50px;
+    color: #111;
+}

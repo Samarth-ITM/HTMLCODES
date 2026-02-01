@@ -1,0 +1,229 @@
+/* PROGRAMS PAGE STYLES */
+
+.programs-bg-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(165, 28, 48, 0.35) 0%,
+        rgba(0, 0, 0, 0.45) 100%
+    ),
+    url('Assets/ITMbg.jpeg') center/cover fixed;
+    z-index: -1;
+}
+
+/* PROGRAMS SECTION */
+
+.programs-section {
+    background: transparent;
+    padding: 60px 0 80px 0;
+    position: relative;
+    z-index: 5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.programs-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.programs-section .section-title {
+    color: #ffffff;
+    font-size: 52px;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.event-item {
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    gap: 30px;
+    align-items: center;
+    padding: 30px 40px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.event-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.event-item:last-child {
+    margin-bottom: 0;
+}
+
+.event-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.event-date .month {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a51c30;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.event-date .day {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.event-meta {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #a51c30;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.event-item .event-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #111111;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.event-organizer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #666666;
+    margin: 0;
+}
+
+.event-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(165, 28, 48, 0.3);
+}
+
+/* EVENT CARDS & STATUS TAGS */
+
+.event-card {
+    border: 1px solid rgba(229, 231, 235, 0.4);
+    padding: 28px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.event-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.event-status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.event-status.upcoming {
+    background: #a51c30;
+    color: #ffffff;
+}
+
+.event-status.completed {
+    background: #28a745;
+    color: #ffffff;
+}
+
+.event-card .event-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #111;
+    padding-right: 80px;
+}
+
+.event-card .event-date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #a51c30;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.event-topic {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.event-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+}

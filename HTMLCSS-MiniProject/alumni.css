@@ -1,0 +1,126 @@
+/* ALUMNI PAGE STYLES */
+
+/* ALUMNI PAGE BACKGROUND */
+
+.alumni-bg-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(165, 28, 48, 0.35) 0%,
+        rgba(0, 0, 0, 0.45) 100%
+    ),
+    url('Assets/ITMbg.jpeg') center/cover fixed;
+    z-index: -1;
+}
+
+.alumni-hero {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.alumni-page-section {
+    background: transparent;
+    padding: 60px 0 80px 0;
+    position: relative;
+    z-index: 5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alumni-page-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.alumni-page-section .section-title {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+}
+
+.alumni-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.alumni-card {
+    border: 1px solid rgba(229, 231, 235, 0.4);
+    padding: 28px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.alumni-page-section .alumni-card {
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.alumni-card:hover {
+    opacity: 0.95;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.card-header div {
+    flex: 1;
+}
+
+.card-header h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
+.card-header span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #666;
+}
+
+.card-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.alumni-card p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.alumni-cta {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 0;
+}

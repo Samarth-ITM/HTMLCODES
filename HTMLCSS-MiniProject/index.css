@@ -1,8 +1,9 @@
-/* INDEX/HOME PAGE STYLES */
+/* home */
 
-/* HERO SECTION */
+/* hero */
 
 .hero {
+    /* heromn */
     position: relative;
     height: 78vh;
     width: 100%;
@@ -40,6 +41,7 @@
 }
 
 .hero-content {
+    /* txt */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,7 +68,7 @@
     max-width: 600px;
 }
 
-/* FEATURE SECTIONS */
+/* feat */
 
 .feature-section {
     width: 100%;
@@ -76,6 +78,7 @@
 }
 
 .feature-row {
+    /* sec */
     display: flex;
     align-items: center;
     gap: 60px;
@@ -84,6 +87,7 @@
 }
 
 .feature-row.light {
+    /* light */
     background: rgba(255, 255, 255, 0.85);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -97,6 +101,7 @@
 }
 
 .feature-image {
+    /* imgsde */
     flex: 1;
     min-width: 0;
 }
@@ -109,6 +114,7 @@
 }
 
 .feature-image.grid {
+    /* grid */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
@@ -123,6 +129,7 @@
 }
 
 .feature-content {
+    /* txtsde */
     flex: 1;
     min-width: 0;
 }
@@ -146,7 +153,7 @@
     color: #e0e0e0;
 }
 
-/* ALUMNI SECTION (HOME PAGE) */
+/* alumni */
 
 .alumni-section {
     padding: 80px 0;
@@ -154,6 +161,7 @@
 }
 
 .section-title {
+    /* ttl */
     font-family: Georgia, "Times New Roman", serif;
     text-align: center;
     font-size: 45px;

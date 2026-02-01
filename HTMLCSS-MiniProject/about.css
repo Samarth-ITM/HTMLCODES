@@ -1,6 +1,7 @@
-/* ABOUT PAGE STYLES */
+/* about */
 
 .about-page {
+    /* pgwrap */
     background: linear-gradient(
         135deg,
         rgba(0, 0, 0, 0.85) 0%,
@@ -14,12 +15,13 @@
 }
 
 .page-container {
+    /* wrap */
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-/* TOP SECTION */
+/* top */
 
 .top-section {
     display: grid;
@@ -29,6 +31,7 @@
 }
 
 .brand {
+    /* brand */
     display: flex;
     align-items: center;
     gap: 14px;
@@ -80,11 +83,12 @@
 }
 
 .divider {
+    /* line */
     margin: 40px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* SECTION TITLE (About Page) */
+
 
 .about-page .section-title {
     font-size: 16px;
@@ -95,9 +99,10 @@
     font-weight: 600;
 }
 
-/* GRID LAYOUT */
+/* cols */
 
 .grid-3 {
+    /* columns */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
@@ -122,13 +127,14 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* LOWER GRID */
+/* morecols */
 
 .grid-3.tight {
+    /* grid2 */
     gap: 80px;
 }
 
-/* FOOTER BAR */
+/* ftrarea */
 
 .footer-bar {
     display: flex;

@@ -1,6 +1,7 @@
-/* PROGRAMS PAGE STYLES */
+/* prog */
 
 .programs-bg-section {
+    /* bglayer */
     position: fixed;
     top: 0;
     left: 0;
@@ -15,9 +16,10 @@
     z-index: -1;
 }
 
-/* PROGRAMS SECTION */
+/* progcnt */
 
 .programs-section {
+    /* pgarea */
     background: transparent;
     padding: 60px 0 80px 0;
     position: relative;
@@ -54,6 +56,7 @@
 }
 
 .events-list {
+    /* evnts */
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -63,6 +66,7 @@
 }
 
 .event-item {
+    /* evnt */
     display: grid;
     grid-template-columns: 120px 1fr 120px;
     gap: 30px;
@@ -83,6 +87,7 @@
 }
 
 .event-date {
+    /* date */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,6 +113,7 @@
 }
 
 .event-content {
+    /* evtinfo */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -156,7 +162,7 @@
     border: 3px solid rgba(165, 28, 48, 0.3);
 }
 
-/* EVENT CARDS & STATUS TAGS */
+/* evntcrd */
 
 .event-card {
     border: 1px solid rgba(229, 231, 235, 0.4);

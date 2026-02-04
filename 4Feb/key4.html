@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: spin 3s infinite alternate-reverse;
+        }
+        @keyframes spin{
+            from {transform: rotate(0deg); left:0px}
+            to {transform: rotate(360deg); left:1000px}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

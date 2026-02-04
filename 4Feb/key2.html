@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+            position: relative;
+            animation: float 2s infinite alternate;
+        }
+        @keyframes float{
+            from {left: 0px;}
+            to {left: 1500px;}
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 50%;
+            position: relative;
+            animation: bg 0s infinite alternate;
+        }
+
+        @keyframes bg{
+            from {left: 0px;}
+            to {left: 1500px;}
+        }
+    </style>
+</head>
+<body class="box1">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Challenge: Samarth</title>
+    <style>
+       
+
+        h2 { margin-bottom: 10px;}
+        
+        .task-container {
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .blinking-text {
+            animation: blinkit 1s infinite;
+        }
+
+        @keyframes blinkit {
+            from {color: red; }
+            to {color: blue; }
+        }
+
+        .circle-loader {
+            width: 40px;
+            height: 40px;
+            border: 5px solid white;
+            border-top: 5px solid blue;
+            border-radius: 50%;
+            animation: s 1s linear infinite;
+        }
+
+        @keyframes s {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .dots-container {
+            display: flex;
+            gap: 10px;
+            height: 40px;
+        }
+
+        .dot1{
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            border-radius: 50%;
+            animation: b 1s infinite alternate;
+        }
+
+        
+
+        @keyframes b {
+            0% { transform: translateY(20); }
+            100% { transform: translateY(-20px); }
+        }
+        .dot2 {
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            border-radius: 50%;
+            animation: b 1s infinite alternate;
+        }
+
+        
+        @keyframes b {
+            0% { transform: translateY(20); }
+            100% { transform: translateY(-20px); }
+        }
+        .dot3 {
+            width: 15px;
+            height: 15px;
+            background-color: #333;
+            border-radius: 50%;
+            animation: b 1s infinite alternate;
+        }
+
+        @keyframes b {
+            0% { transform: translateY(20); }
+            100% { transform: translateY(-20px); }
+        }
+
+
+
+        .floating-logo {
+            width: 60px;
+            height: 60px;
+            background-color: green;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: 2px solid yellow;
+            animation: f 2s ease infinite;
+        }
+
+        @keyframes f {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(0px); }
+            100% { transform: translateY(30px); }
+        }
+
+        .progress-container {
+            width: 100%;
+            max-width: 300px;
+            height: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: purple;
+            width: 0%;
+            animation: sF 1s infinite forwards;
+        }
+
+        @keyframes sF {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="task-container">
+        <h1>Task 1</h1>
+        <div class="blinking-text">Loading...</div>
+    </div>
+
+    <div class="task-container">
+        <h1>Task 2</h1>
+        <div class="circle-loader"></div>
+    </div>
+
+    <div class="task-container">
+        <h1>Task 3</h1>
+        <div class="dots-container">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+        </div>
+    </div>
+
+    <div class="task-container">
+        <h1>Task 4</h1>
+        <div class="floating-logo">LOGO</div>
+    </div>
+
+    <div class="task-container">
+        <h1>Task 5</h1>
+        <div class="progress-container">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+</body>
+</html>

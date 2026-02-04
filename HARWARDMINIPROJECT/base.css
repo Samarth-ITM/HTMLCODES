@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  color: #212529;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1010px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* TOP BAR */
+.top-bar {
+  background-color: #a51c30;
+  font-size: 13px;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-bar a {
+  color: #ffffff;
+  padding: 10px 20px;
+  border-left: 1px solid rgba(255,255,255,0.25);
+}
+
+.top-bar a:hover {
+  background-color: #8a1727;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* SEARCH MENU */
+.search-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 13px;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 1000;
+}
+
+.menu-icon,
+.search-icon {
+  padding: 0;
+  line-height: 1;
+}
+
+.menu-icon:hover,
+.search-icon:hover {
+  opacity: 0.6;
+}
+
+/* NAV */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 32px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #505050;
+  color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+}
+
+.site-footer h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: 700;
+  margin-top: 0;
+  letter-spacing: 0;
+}
+
+.site-footer a {
+  display: block;
+  color: #d0d0d0;
+  text-decoration: none;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+
+.site-footer a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #a8a8a8;
+  letter-spacing: 0;
+}
+
+

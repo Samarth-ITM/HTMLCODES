@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+:root{
+  --primary:#4f46e5;
+  --secondary:#6366f1;
+  --bg:#fff;
+  --text:#000;
+
+  --radius:8px;
+
+  --s:8px;
+  --m:16px;
+  --l:32px;
+
+  --font:16px;
+  --hfont:32px;
+}
+
+/* dark theme */
+.dark-theme{
+  --bg:#111;
+  --text:#fff;
+  --primary:#22c55e;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-size:var(--font);
+}
+
+.nav, .footer{
+  background:var(--primary);
+  color:#fff;
+  padding:var(--m);
+}
+
+.hero{
+  text-align:center;
+  padding:var(--l);
+}
+
+.hero h1{
+  font-size:var(--hfont);
+}
+
+.cards{
+  display:flex;
+  gap:var(--m);
+  padding:var(--l);
+}
+
+.card{
+  flex:1;
+  background:var(--secondary);
+  padding:var(--m);
+  border-radius:var(--radius);
+  color:#fff;
+}
+
+.btn{
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  padding:var(--s) var(--m);
+  border-radius:var(--radius);
+}
+
+    </style>
+</head>
+
+<body>
+
+
+<section class="hero">
+  <h1>Welcome to my Landing Page</h1>
+  <p>This is my simple page</p>
+  <button class="btn" onclick="toggleTheme()">Click me to change theme!</button>
+</section>
+
+<section class="cards">
+  <div class="card">This is the first card</div>
+  <div class="card">This is the second card</div>
+</section>
+
+
+    <script>
+        function toggleTheme(){
+            document.body.classList.toggle("dark");
+            
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --mpc: red;
+      --sc: blue;
+      --tc: green;
+    }
+    p {
+      color: var(--tc);
+    }
+    h1 {
+      color: var(--sc);
+    }
+    button {
+      background-color: var(--mpc);
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <h1>TITLE</h1>
+    <p>text :root</p>
+    <button onclick="toggleTheme">theme</button>
+</body>
+</html>

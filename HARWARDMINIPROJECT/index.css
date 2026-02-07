@@ -72,7 +72,7 @@
 }
 
 .home-hero__overlay {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.2));
 	padding: 110px 0;
 	display: flex;
 	align-items: center;
@@ -105,12 +105,12 @@
 
 /* SECTION 2 & 3: SPLIT FEATURES */
 .home-feature {
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.78);
 	padding: 96px 0;
 }
 
 .home-feature--red {
-	background-color: #8e1016;
+	background-color: rgba(142, 16, 22, 0.82);
 	color: #ffffff;
 }
 
@@ -145,7 +145,7 @@
 
 /* SECTION 4: UNDER 30 */
 .home-under30 {
-	background-color: #2a2421;
+	background-color: rgba(42, 36, 33, 0.82);
 	color: #ffffff;
 	padding: 96px 0;
 }
@@ -179,7 +179,7 @@
 
 /* SECTION 5: STORIES & EVENTS */
 .home-stories {
-	background-color: #f7f7f7;
+	background-color: rgba(247, 247, 247, 0.8);
 	padding: 96px 0;
 }
 
@@ -269,7 +269,7 @@
 
 /* SECTION 6: ADVOCATE */
 .home-advocate {
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.78);
 	padding: 96px 0;
 }
 
@@ -285,7 +285,7 @@
 
 /* SECTION 7: HARVARD LOOKS FORWARD */
 .home-forward {
-	background-color: #8e1016;
+	background-color: rgba(142, 16, 22, 0.82);
 	color: #ffffff;
 	padding: 96px 0;
 }

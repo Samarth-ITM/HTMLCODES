@@ -148,8 +148,7 @@
   text-decoration: underline;
 }
 
-.college-sidebar a:last-child {
-}
+
 
 /* RIGHT CONTENT COLUMN */
 .college-content__main {
@@ -162,8 +161,7 @@
   margin-bottom: 18px;
 }
 
-.college-content__main p:last-of-type {
-}
+
 
 /* SOCIAL BUTTONS */
 .college-content__social-buttons {
@@ -183,7 +181,6 @@
   cursor: pointer;
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #ffffff;
-  white-space: nowrap;
 }
 
 .college-social-btn--facebook {

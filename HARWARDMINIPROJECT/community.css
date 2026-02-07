@@ -16,8 +16,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-.community-section {
-}
+
 
 .community-section__inner {
   max-width: 1100px;
@@ -135,8 +134,7 @@
   text-decoration: underline;
 }
 
-.community-sidebar a:last-child {
-}
+
 
 /* MAIN CONTENT AREA */
 .community-content {
@@ -166,8 +164,7 @@
   margin-bottom: 18px;
 }
 
-.community-text p:last-child {
-}
+
 
 /* GET INVOLVED SECTION */
 .community-get-involved {
@@ -211,8 +208,6 @@
   margin-bottom: 8px;
 }
 
-.community-get-involved__list h3:first-child {
-}
 
 .community-get-involved__list p {
   font-size: 15px;

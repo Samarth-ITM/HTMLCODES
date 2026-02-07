@@ -1,5 +1,56 @@
-# HTMLCSS
-HTML MINI PROJECT FEB1:
+#HTMLCSS
+
+
+HTML Harvard Alumni Mini Project 1:
+Home:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/9f2199cf-d9d5-4b5f-84a9-5ab9cc595a62" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/55f59365-fadf-498a-8586-cf05aecc1dba" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/32352601-80da-4d40-a78c-b69bf9a9c7f3" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/3c77c64f-2238-4e10-a4b3-9b21f7825b63" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/f2e91376-fbfe-49b0-ba15-0299301e8b3c" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/ad865893-4af7-4dd2-a003-cd1070bbae40" />
+
+Community:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/e655724c-9e2c-4b35-88ed-dbaafd1c31b9" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/27e4dd58-d772-4193-a18d-1d5366fec305" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/638bdfb8-2591-452b-91cf-e040a1cdee16" />
+
+Programs and Events:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/37cc1cca-871b-4910-8a90-49e28a4718de" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/80faa30b-268f-412f-ae4f-43e34fa8bcbc" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/45c3d006-4588-4e1f-92e3-3c5096890854" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/4edf9f8f-e988-4d1f-b917-e6cd999458ea" />
+
+College:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/7bdfed70-3a09-44b8-98cb-0b9262155062" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/ef5593fa-30c0-4a4f-ae9e-05ee5e0ace52" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/660a5901-b6e9-46c2-953a-12b64cc9a0f5" />
+
+Graduate Schools:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/e1b743f8-13c7-4c18-a23d-b6556d0055a7" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/5bde6d5b-a321-4de0-962c-344af3527df9" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/cc6f2166-1289-4581-abdf-1533a0300397" />
+
+Community Login:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/481dd81e-df10-4835-afd2-f307a11eca7c" />
+
+Register:
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/04b507d6-bca8-4500-9e3c-1cc9de11ef88" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/65de4ac1-b548-4fb7-90d9-42aad7c804e2" />
+<img width="1560" height="1029" alt="image" src="https://github.com/user-attachments/assets/a290ca16-6c0c-41a4-a185-2805db0a1370" />
+#END
+
+
+
+
+
+
+
+
+
+
+
+HTML ITM Alumni Website Practice:
 HOME PAGE:
 <img width="1552" height="1025" alt="image" src="https://github.com/user-attachments/assets/f238a7ea-3a47-49b9-94f5-7f3bf0a992da" />
 <img width="1552" height="1025" alt="image" src="https://github.com/user-attachments/assets/5e9b6fb6-0698-46dc-bf24-53dad0e45c9b" />

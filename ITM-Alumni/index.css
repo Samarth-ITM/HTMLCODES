@@ -10,14 +10,12 @@
     overflow: hidden;
 }
 
-.hero-home,
-.feature-section {
+.hero-home {
     background: linear-gradient(
         135deg,
         rgba(165, 28, 48, 0.35) 0%,
         rgba(0, 0, 0, 0.45) 100%
-    ),
-    url('Assets/ITMbg.jpeg') center/cover fixed;
+    );
 }
 
 .hero-image {
@@ -156,7 +154,7 @@
 
 .alumni-section {
     padding: 80px 0;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .section-title {

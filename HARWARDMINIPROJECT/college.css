@@ -1,0 +1,285 @@
+/* COLLEGE ALUMNI PAGE STYLES */
+
+/* GLOBAL STYLES */
+.page-college {
+  background-color: #f7f7f7;
+  color: #2b2b2b;
+}
+
+.page-college h1,
+.page-college h2,
+.page-college h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #111111;
+}
+
+.page-college p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.page-college a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.page-college a:hover {
+  text-decoration: underline;
+}
+
+/* SECTION 0: HERO */
+.college-hero {
+  position: relative;
+  min-height: 300px;
+}
+
+.college-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  align-items: center;
+}
+
+.college-hero__container {
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 30px;
+  color: #ffffff;
+}
+
+.college-hero h1 {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.college-hero p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+
+.college-hero__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.college-hero__btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.college-hero__btn--primary {
+  background-color: #3b7bc9;
+  color: #ffffff;
+}
+
+.college-hero__btn--secondary {
+  background-color: #4a8c5a;
+  color: #ffffff;
+}
+
+.college-hero__btn--primary:hover {
+  background-color: #2f67aa;
+}
+
+.college-hero__btn--secondary:hover {
+  background-color: #3f764d;
+}
+
+/* SECTION 1: COLLEGE OVERVIEW + CONTENT */
+.college-content {
+  background-color: rgba(247, 247, 247, 0.85);
+  width: 100%;
+  padding: 80px 0;
+}
+
+.college-content__container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 48px;
+}
+
+/* LEFT SIDEBAR */
+.college-sidebar {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 24px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.college-sidebar h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 16px;
+}
+
+.college-sidebar a {
+  display: block;
+  font-size: 14px;
+  color: #1a73e8;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.college-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.college-sidebar a:last-child {
+}
+
+/* RIGHT CONTENT COLUMN */
+.college-content__main {
+  max-width: 760px;
+}
+
+.college-content__main p {
+  font-size: 15px;
+  color: #333333;
+  margin-bottom: 18px;
+}
+
+.college-content__main p:last-of-type {
+}
+
+/* SOCIAL BUTTONS */
+.college-content__social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 32px;
+  width: fit-content;
+}
+
+.college-social-btn {
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.college-social-btn--facebook {
+  background-color: #3b7bc9;
+}
+
+.college-social-btn--instagram {
+  background-color: #4a8c5a;
+}
+
+.college-social-btn--linkedin {
+  background-color: #a51c30;
+}
+
+.college-social-btn--facebook:hover {
+  background-color: #2f67aa;
+}
+
+.college-social-btn--instagram:hover {
+  background-color: #3f764d;
+}
+
+.college-social-btn--linkedin:hover {
+  background-color: #8a1727;
+}
+
+/* SECTION 2: ALUMNI PROFILES */
+.college-profiles {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  padding: 96px 0;
+}
+
+.college-profiles__container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.college-profiles h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 48px;
+}
+
+.college-profiles__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+}
+
+/* INDIVIDUAL PROFILE */
+.college-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.college-profile img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.college-profile time {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 8px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.college-profile h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.college-profile > p:not(.college-profile__category) {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 12px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.college-profile__category {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 8px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}

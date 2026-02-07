@@ -20,6 +20,27 @@ body {
     line-height: 1.6;
 }
 
+/* MAIN CONTENT WITH FIXED BACKGROUND */
+main {
+  background-image: url("Assets/ITMbg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAKE SECTIONS TRANSLUCENT */
+.feature-section {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.feature-row.light {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
+.feature-row.dark {
+  background: rgba(43, 43, 43, 0.9) !important;
+}
+
 /* wrap */
 
 .container {

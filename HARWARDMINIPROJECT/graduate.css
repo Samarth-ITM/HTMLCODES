@@ -1,0 +1,188 @@
+/* GRADUATE SCHOOLS PAGE STYLES */
+
+.page-graduate {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+
+.page-graduate h1,
+.page-graduate h2,
+.page-graduate h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #111111;
+}
+
+.page-graduate p,
+.page-graduate button {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* HERO */
+.graduate-hero {
+  position: relative;
+  min-height: 320px;
+}
+
+.graduate-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  align-items: center;
+}
+
+.graduate-hero__container {
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 30px;
+  color: #ffffff;
+}
+
+.graduate-hero h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.graduate-hero p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.graduate-hero__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.graduate-hero__btn {
+  background-color: #3b7bc9;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.graduate-hero__btn:hover {
+  background-color: #2f67aa;
+}
+
+/* SCHOOLS GRID */
+.graduate-schools {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 96px 0;
+  position: relative;
+}
+
+.graduate-schools__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  z-index: 0;
+}
+
+.graduate-schools__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 32px;
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.graduate-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.graduate-card:hover {
+  background-color: rgba(240, 240, 240, 0.95);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.graduate-card__media {
+  margin: 0 -20px 16px -20px;
+  width: calc(100% + 40px);
+}
+
+.graduate-card__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.graduate-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.graduate-card p {
+  font-size: 14px;
+  color: #333333;
+  margin: 0 0 8px 0;
+}
+
+.graduate-card p:last-of-type {
+  margin-bottom: 16px;
+}
+
+.graduate-card__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.graduate-card__btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #3b7bc9;
+  background-color: #ffffff;
+  color: #3b7bc9;
+  cursor: pointer;
+}
+
+.graduate-card__btn:hover {
+  background-color: #f2f2f2;
+}
+
+.graduate-card__btn:first-child {
+  background-color: #3b7bc9;
+  color: #ffffff;
+  border-color: #3b7bc9;
+}
+
+.graduate-card__btn:first-child:hover {
+  background-color: #2f67aa;
+}
+
+.graduate-card--single {
+  grid-column: 1 / 2;
+}

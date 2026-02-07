@@ -1,0 +1,149 @@
+/* HARVARDKEY HELP OVERVIEW */
+.page-register {
+  background-color: #f2efe9;
+}
+
+.register-hero {
+  position: relative;
+  min-height: 300px;
+  color: #ffffff;
+}
+
+.register-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  align-items: center;
+}
+
+.register-hero__inner {
+  max-width: 1140px;
+  margin-left: 220px;
+  padding: 80px 30px;
+}
+
+.register-hero__eyebrow {
+  margin: 0 0 12px 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.register-hero h1 {
+  margin: 0 0 8px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.register-hero__subtitle {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.register-content {
+  width: 100%;
+  padding: 56px 0 96px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.register-content__inner {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 64px;
+}
+
+.register-sidebar {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  padding: 22px 20px;
+}
+
+.register-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.register-sidebar li {
+  margin: 10px 0;
+}
+
+.register-sidebar a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  color: #2f6ebc;
+  text-decoration: none;
+}
+
+.register-sidebar a.is-active {
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.register-article {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #333333;
+  font-size: 14px;
+}
+
+.register-article section {
+  margin-bottom: 36px;
+}
+
+.register-article h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  color: #1f1f1f;
+  margin: 0 0 14px 0;
+}
+
+.register-article p {
+  margin: 0 0 14px 0;
+}
+
+.register-article a {
+  color: #2f6ebc;
+  text-decoration: none;
+}
+
+.register-article a:hover {
+  text-decoration: underline;
+}
+
+.page-register button:hover {
+  background-color: #e6e6e6;
+}
+
+
+.register-image {
+  margin: 20px 0 28px;
+  text-align: center;
+}
+
+.register-image img {
+  width: 100%;
+  max-width: 640px;
+  display: inline-block;
+}
+
+.register-article ul {
+  margin: 10px 0 16px 22px;
+  padding: 0;
+}
+
+.register-article li {
+  margin-bottom: 8px;
+}

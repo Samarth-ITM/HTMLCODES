@@ -6,8 +6,7 @@
         135deg,
         rgba(0, 0, 0, 0.85) 0%,
         rgba(0, 0, 0, 0.9) 100%
-    ),
-    url('Assets/ITMbg.jpeg') center/cover fixed;
+    );
     min-height: 100vh;
     padding: 60px 0;
     position: relative;

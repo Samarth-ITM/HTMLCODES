@@ -265,7 +265,7 @@
   max-width: 100%;
 }
 
-.college-profile > p:not(.college-profile__category) {
+.college-profile p {
   font-size: 14px;
   color: #333333;
   margin-bottom: 12px;

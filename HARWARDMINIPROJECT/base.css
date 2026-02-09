@@ -9,7 +9,6 @@ body {
   color: #212529;
 }
 
-/* CONTAINER */
 .haa-layout__container {
   max-width: 1010px;
   margin-left: auto;
@@ -18,7 +17,6 @@ body {
   padding-right: 30px;
 }
 
-/* TOP BAR */
 .haa-topbar {
   background-color: #a51c30;
   font-size: 13px;
@@ -39,7 +37,6 @@ body {
   background-color: #8a1727;
 }
 
-/* HEADER */
 .haa-header {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
@@ -65,7 +62,6 @@ body {
   display: block;
 }
 
-/* SEARCH MENU */
 .haa-search-menu {
   display: flex;
   align-items: center;
@@ -86,7 +82,6 @@ body {
   opacity: 0.6;
 }
 
-/* NAV */
 .haa-nav ul {
   list-style: none;
   margin: 0;
@@ -117,7 +112,6 @@ body {
   border-bottom-color: #a51c30;
 }
 
-/* MAIN CONTENT WITH FIXED BACKGROUND */
 main {
   background-image: url("Assets/BG.jpeg");
   background-attachment: fixed;
@@ -125,7 +119,6 @@ main {
   background-position: center;
 }
 
-/* MAKE SECTIONS TRANSLUCENT */
 .home-section {
   background-color: rgba(255, 255, 255, 0.85);
   color: #212529;
@@ -152,7 +145,6 @@ main {
   background-color: transparent;
 }
 
-/* FOOTER */
 .haa-footer {
   background-color: #505050;
   color: #ffffff;

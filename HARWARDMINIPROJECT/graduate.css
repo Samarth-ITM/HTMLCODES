@@ -1,5 +1,3 @@
-/* GRADUATE SCHOOLS PAGE STYLES */
-
 .page-graduate {
   background-color: #f7f7f7;
   color: #333333;
@@ -17,7 +15,6 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* HERO */
 .graduate-hero {
   position: relative;
   min-height: 320px;
@@ -77,7 +74,6 @@
   background-color: #2f67aa;
 }
 
-/* SCHOOLS GRID */
 .graduate-schools {
   width: 100%;
   margin-left: auto;

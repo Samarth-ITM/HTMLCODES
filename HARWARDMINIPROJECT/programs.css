@@ -1,6 +1,4 @@
-/* PROGRAMS & EVENTS PAGE */
 
-/* GLOBAL BODY STYLES */
 .page-programs {
   background-color: #f7f7f7;
   color: #2b2b2b;
@@ -17,7 +15,7 @@
   font-size: 15px;
 }
 
-/* SECTION 1: HERO */
+
 .programs-hero {
   position: relative;
   min-height: 300px;
@@ -78,7 +76,7 @@
   background-color: #2f67aa;
 }
 
-/* SECTION 2: MAIN CONTENT WITH SIDEBAR & FEATURED */
+
 .programs-main {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 70px 0;
@@ -103,7 +101,7 @@
   padding-right: 30px;
 }
 
-/* SECTION 2A: SIDEBAR */
+
 .programs-sidebar {
   background-color: #ffffff;
   padding: 24px 20px;
@@ -131,7 +129,7 @@
   text-decoration: underline;
 }
 
-/* SECTION 2B: FEATURED EVENT */
+
 .programs-featured {
   background-color: #ffffff;
   padding: 48px;
@@ -185,7 +183,7 @@
   justify-self: center;
 }
 
-/* SECTION 3: INFORMATION */
+
 .programs-info {
   width: 100%;
   padding: 64px 0;
@@ -203,7 +201,7 @@
   text-decoration: underline;
 }
 
-/* SECTION 4: UPCOMING EVENTS */
+
 .programs-events {
   width: 100%;
   padding: 80px 0;
@@ -223,7 +221,7 @@
   gap: 32px;
 }
 
-/* SECTION 4A: INDIVIDUAL EVENT */
+
 .programs-event {
   display: grid;
   grid-template-columns: 70px 1fr 60px;
@@ -273,7 +271,7 @@
   margin-bottom: 4px;
 }
 
-/* SECTION 5: EVENT INFORMATION FOOTER */
+
 .programs-footer-info {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 80px 0;

@@ -1,0 +1,97 @@
+*{
+    margin-top: 0px;
+    margin-left: 0cm;
+    margin-right: 0cm;
+}
+
+
+.top{
+    display:flex;
+    align-items:center;
+    background:rgb(88, 16, 16);
+    color:white;
+    padding:10px 20px;
+    gap: 5px;
+}
+
+.search{
+    flex:1;
+    padding:5px;
+}
+
+
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    min-width:200px;
+    background:rgb(4, 4, 61);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    gap:20px;
+}
+
+.logo{
+    font-size: larger;
+}
+
+.link, .logo, .ad :hover{
+    cursor: pointer;
+}
+
+#btn{
+    background-color: rgb(88, 16, 16);
+    color: white;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 3px;
+}
+
+.main{
+    flex:1;
+    background:white;
+    padding:30px;
+}
+
+
+.stats{
+    display:flex;
+    gap:20px;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+#up{
+    margin-bottom: 10px;
+}
+
+.card{
+    flex:1;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow: 10px 10px 300px;
+
+}
+
+.blue-card{
+    flex:1;
+    background:blue;
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.footer{
+    position: relative;
+    margin-top: 72.7vh;
+    text-align: center;
+    background-color: rgb(6, 6, 78);
+    color: white;
+}

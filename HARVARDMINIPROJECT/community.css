@@ -14,8 +14,6 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-
-
 .community-section__inner {
   max-width: 1100px;
   margin-left: auto;
@@ -36,8 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-  display: flex;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.2));
   align-items: center;
 }
 
@@ -121,14 +118,8 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   color: #1a73e8;
-  text-decoration: none;
   margin-bottom: 10px;
 }
-
-.community-sidebar a:hover {
-  text-decoration: underline;
-}
-
 
 
 .community-content {
@@ -208,7 +199,6 @@
 .community-get-involved__list a {
   color: #1a73e8;
   text-decoration: underline;
-  font-weight: normal;
 }
 
 .community-contact {
@@ -249,10 +239,6 @@
   margin-bottom: 6px;
 }
 
-.community-contact__column:first-child p {
-  font-size: 15px;
-  max-width: 280px;
-}
 
 .community-contact__btn {
   background-color: #ffffff;
@@ -263,7 +249,6 @@
   border-radius: 4px;
   border: none;
   margin-top: 16px;
-  display: inline-block;
   cursor: pointer;
 }
 

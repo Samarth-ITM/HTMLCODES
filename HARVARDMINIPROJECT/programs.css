@@ -28,7 +28,6 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-  display: flex;
   align-items: center;
 }
 
@@ -56,7 +55,6 @@
 }
 
 .programs-hero__buttons {
-  display: flex;
   gap: 12px;
 }
 
@@ -68,7 +66,7 @@
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
-  border: none;
+
   cursor: pointer;
 }
 
@@ -121,12 +119,7 @@
   font-size: 14px;
   color: #1a73e8;
   margin-bottom: 10px;
-  text-decoration: none;
   font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.programs-sidebar a:hover {
-  text-decoration: underline;
 }
 
 
@@ -164,7 +157,6 @@
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
-  border: none;
   cursor: pointer;
   grid-column: 1;
   width: fit-content;

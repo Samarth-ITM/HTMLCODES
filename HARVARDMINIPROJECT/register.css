@@ -14,8 +14,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
-  display: flex;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.2));
   align-items: center;
 }
 
@@ -115,7 +114,6 @@
 
 .register-article a {
   color: #2f6ebc;
-  text-decoration: none;
 }
 
 .register-article a:hover {
@@ -126,21 +124,8 @@
   background-color: #e6e6e6;
 }
 
-
-.register-image {
-  margin: 20px 0 28px;
-  text-align: center;
-}
-
-.register-image img {
-  width: 100%;
-  max-width: 640px;
-  display: inline-block;
-}
-
 .register-article ul {
   margin: 10px 0 16px 22px;
-  padding: 0;
 }
 
 .register-article li {

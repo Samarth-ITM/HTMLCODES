@@ -1,0 +1,47 @@
+/* register.css - Hacker Dark Theme Extension */
+.input-group {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    background: #000;
+    color: var(--accent);
+    font-size: 20px;
+    outline: none;
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.input-group input:focus {
+    border-color: var(--accent);
+}
+
+.id-display {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+#playerId {
+    font-weight: bold;
+    color: var(--accent);
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.btn-secondary {
+    margin-top: 15px;
+    border-color: #334155;
+    color: var(--text-secondary);
+}
+
+.btn-secondary:hover {
+    background-color: #334155;
+    color: #fff;
+}

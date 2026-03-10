@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Leaderboard — Quiz Tournament</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+
+    <div class="lb-root">
+
+        <!-- Header -->
+        <div class="lb-header">
+            <div class="lb-logo">🏆 ProjectQuiz</div>
+        </div>
+
+        <!-- Main content -->
+        <div class="lb-main">
+
+            <div class="lb-title-row">
+                <div>
+                    <p class="lb-eyebrow">Tournament</p>
+                    <h1 class="lb-title">Global Rankings</h1>
+                    <p class="lb-sub">The best HTML/CSS/JS developers in the arena.</p>
+                </div>
+            </div>
+
+            <!-- Table card -->
+            <div class="lb-card">
+                <table class="lb-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>High Score</th>
+                            <th>Accuracy</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboardBody">
+                        <!-- populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="lb-actions">
+                <button class="lb-back-btn" onclick="window.location.href='../dashboard/dashboard.html'">← Back to Dashboard</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../base.js"></script>
+    <script src="leaderboard.js"></script>
+</body>
+</html>

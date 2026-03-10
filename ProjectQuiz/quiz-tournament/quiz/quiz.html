@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament — Quiz Platform</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <!-- ===================== START SCREEN ===================== -->
+    <div id="startScreen" class="quiz-screen">
+        <div class="start-card">
+            <div class="start-icon">🏟️</div>
+            <h1 class="start-title">Enter the Arena</h1>
+            <p class="start-sub">Compete across 4 rounds. Score enough points to advance each stage.</p>
+
+            <div class="rules-box">
+                <p class="rules-heading">⚠️ Tournament Rules</p>
+                <ul class="rules-list">
+                    <li>The quiz enforces <strong>fullscreen mode</strong></li>
+                    <li>Do not switch tabs or exit fullscreen</li>
+                    <li>You will be <strong>disqualified instantly</strong> on any violation</li>
+                </ul>
+            </div>
+
+            <div class="start-meta">
+                <span class="meta-label">Attempts Remaining</span>
+                <span class="meta-value" id="startAttempts">—</span>
+            </div>
+
+            <button id="realStartBtn" class="btn-cta">Begin Tournament</button>
+        </div>
+    </div>
+
+    <!-- ===================== BRACKET SCREEN ===================== -->
+    <div id="bracketScreen" class="quiz-screen hidden">
+        <div class="bracket-card">
+            <p class="bracket-eyebrow">Tournament Progress</p>
+            <h2 class="bracket-title">Your Path to Champion</h2>
+
+            <div class="bracket-container" id="bracketContainer">
+                <div class="bracket-step" id="bracket-0">
+                    <span class="bs-dot"></span>
+                    <div class="bs-content">
+                        <span class="bs-name">Round 1</span>
+                        <span class="bs-detail">10 Questions · Min 5,000 pts</span>
+                    </div>
+                </div>
+                <div class="bracket-line"></div>
+                <div class="bracket-step" id="bracket-1">
+                    <span class="bs-dot"></span>
+                    <div class="bs-content">
+                        <span class="bs-name">Quarterfinal</span>
+                        <span class="bs-detail">8 Questions · Min 4,000 pts</span>
+                    </div>
+                </div>
+                <div class="bracket-line"></div>
+                <div class="bracket-step" id="bracket-2">
+                    <span class="bs-dot"></span>
+                    <div class="bs-content">
+                        <span class="bs-name">Semifinal</span>
+                        <span class="bs-detail">6 Questions · Min 3,000 pts</span>
+                    </div>
+                </div>
+                <div class="bracket-line"></div>
+                <div class="bracket-step" id="bracket-3">
+                    <span class="bs-dot"></span>
+                    <div class="bs-content">
+                        <span class="bs-name">Final</span>
+                        <span class="bs-detail">5 Questions · Min 3,000 pts</span>
+                    </div>
+                </div>
+                <div class="bracket-line"></div>
+                <div class="bracket-step trophy" id="bracket-4">
+                    <span class="bs-dot-trophy">👑</span>
+                    <div class="bs-content">
+                        <span class="bs-name">Champion</span>
+                        <span class="bs-detail">All rounds cleared</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="startCurrentRoundBtn" class="btn-cta">Start Active Round</button>
+        </div>
+    </div>
+
+    <!-- ===================== QUIZ CONTAINER ===================== -->
+    <div id="quizContainer" class="quiz-game-layout hidden">
+
+        <div id="roundBanner" class="round-banner hidden"></div>
+
+        <!-- Sticky Game Header -->
+        <div class="game-header">
+            <div class="gh-badge round-badge" id="roundName">Round 1</div>
+            <div class="gh-badge score-badge">
+                Score: <strong id="scoreDisplay">0</strong>
+                <span class="score-sep">|</span>
+                Min: <strong id="minScoreDisplay">0</strong>
+            </div>
+            <div class="gh-badge timer-badge" id="timerBadge">
+                ⏱ <span id="timeDisplay">10</span>s
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Scrollable Game Body -->
+        <div class="game-body">
+            <div class="question-card">
+
+                <!-- Question Meta Row -->
+                <div class="q-meta-row">
+                    <span class="q-progress" id="questionProgress">
+                        Q <span id="currentQNum">1</span> / <span id="totalQNum">10</span>
+                    </span>
+                </div>
+
+                <!-- Question Text -->
+                <h2 id="questionText" class="question-text">Loading question...</h2>
+
+                <!-- Powerups Row (between question and options) -->
+                <div class="powerups-row">
+                    <div id="powerupsDock" class="powerups-dock">
+                        <button class="powerup-btn" id="pu-5050" onclick="activatePowerupDock('50-50')" title="Remove two wrong answers">
+                            <span class="pu-icon">🌗</span>
+                            <span class="pu-label">50/50</span>
+                        </button>
+                        <button class="powerup-btn" id="pu-immunity" onclick="activatePowerupDock('Immunity')" title="First wrong answer is forgiven">
+                            <span class="pu-icon">🛡️</span>
+                            <span class="pu-label">Immunity</span>
+                        </button>
+                        <button class="powerup-btn" id="pu-time" onclick="activatePowerupDock('Time Boost')" title="Add 10 seconds to clock">
+                            <span class="pu-icon">⏳</span>
+                            <span class="pu-label">+10s</span>
+                        </button>
+                        <button class="powerup-btn" id="pu-redemption" onclick="activatePowerupDock('Redemption')" title="Double points if correct">
+                            <span class="pu-icon">🔄</span>
+                            <span class="pu-label">Redeem</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Explanation Popup (above options) -->
+                <div id="explanationPopup" class="explanation-popup hidden">
+                    <p id="explanationText" class="exp-result"></p>
+                    <p class="exp-label">Explanation</p>
+                    <p id="explanationDesc" class="exp-body"></p>
+                    <button id="nextQuestionBtn" class="btn-cta" style="display:none; margin-top:12px;">Next Question</button>
+                </div>
+
+                <!-- Answer Options (pre-built, reused each question) -->
+                <div class="options-grid" id="optionsGrid">
+                    <button class="option-btn hidden" id="optBtn0" style="--opt-color:#3b82f6"></button>
+                    <button class="option-btn hidden" id="optBtn1" style="--opt-color:#ef4444"></button>
+                    <button class="option-btn hidden" id="optBtn2" style="--opt-color:#10b981"></button>
+                    <button class="option-btn hidden" id="optBtn3" style="--opt-color:#f59e0b"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== CHAMPION SCREEN ===================== -->
+    <div id="championScreen" class="quiz-screen hidden">
+        <div class="champion-card">
+            <div class="champ-icon">🏆</div>
+            <h1 class="champ-title">CHAMPION</h1>
+            <p class="champ-sub">You conquered the entire tournament!</p>
+
+            <div class="champ-stats">
+                <div class="champ-row">
+                    <span class="champ-label">Player</span>
+                    <span id="champName" class="champ-value">—</span>
+                </div>
+                <div class="champ-row">
+                    <span class="champ-label">Player ID</span>
+                    <span id="champId" class="champ-value">—</span>
+                </div>
+                <div class="champ-divider"></div>
+                <div class="champ-row">
+                    <span class="champ-label">Final Score</span>
+                    <span id="champScore" class="champ-value gold">—</span>
+                </div>
+                <div class="champ-row">
+                    <span class="champ-label">Accuracy</span>
+                    <span id="champAccuracy" class="champ-value gold">—%</span>
+                </div>
+                <div class="champ-row">
+                    <span class="champ-label">Rounds Cleared</span>
+                    <span class="champ-value">4 / 4</span>
+                </div>
+            </div>
+
+            <button id="champDashboardBtn" class="btn-cta gold-btn">View Leaderboard</button>
+        </div>
+    </div>
+
+    <!-- ===================== RESULT MODAL ===================== -->
+    <div id="resultModal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <h2 id="resultTitle" class="modal-title">Round Complete</h2>
+            <p id="resultMessage" class="modal-message">You passed the round!</p>
+            <p class="modal-score">Score: <strong id="resultScore"></strong></p>
+            <button id="nextRoundBtn" class="btn-cta hidden">Next Round</button>
+            <button id="retryBtn" class="btn-cta red-btn hidden">Finish</button>
+        </div>
+    </div>
+
+    <script src="../base.js"></script>
+    <script src="backendlogic/timer.js"></script>
+    <script src="backendlogic/explanation.js"></script>
+    <script src="backendlogic/powerups.js"></script>
+    <script src="backendlogic/roundend.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Quiz Tournament</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="forum.css">
+</head>
+<body>
+    <div class="forum-container">
+        <h1>Discussion Forum</h1>
+        <p>Share your thoughts about the quiz!</p>
+
+        <div class="discussion-card">
+            <h3>How was the quiz?</h3>
+            <div id="commentsList" class="comments-list"></div>
+            <form id="commentForm" class="comment-form">
+                <input type="text" id="commentInput" placeholder="Share your thoughts..." required>
+                <button type="submit" class="btn">Post</button>
+            </form>
+        </div>
+
+        <button class="btn" onclick="window.location.href='../index.html'">Back to Home</button>
+    </div>
+
+    <script src="../base.js"></script>
+    <script src="forum.js"></script>
+</body>
+</html>

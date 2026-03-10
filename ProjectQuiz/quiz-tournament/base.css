@@ -1,0 +1,85 @@
+
+
+:root {
+    --bg-main: #0d1117; 
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e; 
+    --border-color: #30363d;
+    --accent: #10b981; 
+    --accent-hover: #059669;
+    --bg-muted: #161b22;
+    --card-bg: #21262d;
+
+    --correct-green: #10b981;
+    --warning-orange: #f59e0b;
+    --error-red: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Card Utility */
+.card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Button Utility */
+.btn {
+    background-color: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 16px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: #000;
+}
+
+/* Header Utilities */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 { font-size: 42px; text-transform: uppercase; letter-spacing: 2px; }
+h2 { font-size: 32px; }
+h3 { font-size: 24px; }
+p { font-size: 18px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;}
+.small-label { font-size: 14px; color: var(--text-secondary); }
+
+

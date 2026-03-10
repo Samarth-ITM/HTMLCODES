@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizOps — Dashboard</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="dash-root">
+
+        <!-- Top Nav Bar -->
+        <header class="dash-header">
+            <span class="dash-logo">Quiz<span class="hl">Ops</span></span>
+            <button id="logoutBtn" class="btn-ghost-red">New Player (Logout)</button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dash-main">
+
+            <!-- Welcome Banner -->
+            <div class="welcome-card">
+                <div class="welcome-text">
+                    <p class="welcome-label">Welcome back,</p>
+                    <h1 class="welcome-name" id="playerNameDisplay">Player</h1>
+                    <p class="welcome-id">Player ID: <code id="playerIdDisplay">P####</code></p>
+                </div>
+                <div class="welcome-badge">
+                    <span class="badge-icon">🏆</span>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-icon">📈</span>
+                    <div class="stat-body">
+                        <p class="stat-label">High Score</p>
+                        <p class="stat-value" id="highScoreDisplay">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-body">
+                        <p class="stat-label">Attempts Left</p>
+                        <p class="stat-value" id="attemptsDisplay">3/3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Section -->
+            <div class="action-section">
+                <button id="startQuizBtn" class="btn-primary">Resume Quiz Arena</button>
+                <button id="viewLeaderboardBtn" class="btn-secondary">View Leaderboard</button>
+
+                <div class="action-divider">
+                    <span>or</span>
+                </div>
+
+                <button onclick="window.location.href='../index.html'" class="btn-tertiary">Return to Main Menu</button>
+                <p class="action-hint">Progress is saved — resume anytime or discuss on the Forum.</p>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="../base.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

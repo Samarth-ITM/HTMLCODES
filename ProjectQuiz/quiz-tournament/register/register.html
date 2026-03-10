@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Quiz Tournament</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Register for Tournament</h1>
+        <p>Create a user identity for the tournament.</p>
+        
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="text" id="playerName" placeholder="Enter your name" required autocomplete="off" maxlength="15">
+            </div>
+            <div class="id-display" id="idDisplay">
+                Your Player ID: <span id="playerId">Generating...</span>
+            </div>
+            
+            <button type="submit" class="btn">Register & Enter Arena</button>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='../index.html'">Go to Main Menu</button>
+        </form>
+    </div>
+
+    <script src="../base.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

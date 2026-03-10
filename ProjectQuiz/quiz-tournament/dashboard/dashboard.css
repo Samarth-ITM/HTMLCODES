@@ -1,0 +1,298 @@
+/* =============================================
+   dashboard.css — ProjectQuiz Dashboard Page
+   ============================================= */
+
+/* Override base.css body centering for this page */
+body {
+    display: block !important;
+    padding: 0 !important;
+    align-items: unset !important;
+    justify-content: unset !important;
+}
+
+/* ---- Root Shell ---- */
+.dash-root {
+    min-height: 100vh;
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---- Top Nav Header ---- */
+.dash-header {
+    height: 60px;
+    background: var(--bg-muted);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    flex-shrink: 0;
+}
+
+.dash-logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dash-logo .hl {
+    color: var(--accent);
+}
+
+.btn-ghost-red {
+    background: transparent;
+    border: 1px solid var(--error-red);
+    color: var(--error-red);
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-ghost-red:hover {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* ---- Main Content ---- */
+.dash-main {
+    flex: 1;
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 28px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* ---- Welcome Card ---- */
+.welcome-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 36px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.welcome-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.welcome-id {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+    font-family: inherit;
+}
+
+.welcome-id code {
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--bg-muted);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.welcome-badge {
+    font-size: 48px;
+    opacity: 0.4;
+    user-select: none;
+}
+
+/* ---- Stats Row ---- */
+.stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.stat-card:hover {
+    border-color: var(--accent);
+}
+
+.stat-icon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.stat-value {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    line-height: 1;
+}
+
+/* ---- Action Section ---- */
+.action-section {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Primary CTA */
+.btn-primary {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background: var(--accent);
+    color: #000;
+}
+
+.btn-primary:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* Secondary CTA */
+.btn-secondary {
+    background: transparent;
+    border: 1.5px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Divider */
+.action-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 4px 0;
+}
+
+.action-divider span {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+}
+
+/* Tertiary / Return */
+.btn-tertiary {
+    background: var(--bg-muted);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-tertiary:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+/* Hint text below buttons */
+.action-hint {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+    opacity: 0.7;
+    margin-top: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.3px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 600px) {
+    .stats-row {
+        grid-template-columns: 1fr;
+    }
+    .welcome-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .welcome-badge {
+        display: none;
+    }
+    .dash-main {
+        padding: 28px 16px 60px;
+    }
+    .action-section {
+        padding: 24px 20px;
+    }
+}

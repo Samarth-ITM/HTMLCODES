@@ -2,12 +2,9 @@
    dashboard.css — ProjectQuiz Dashboard Page
    ============================================= */
 
-/* Override base.css body centering for this page */
 body {
-    display: block !important;
-    padding: 0 !important;
-    align-items: unset !important;
-    justify-content: unset !important;
+    display: block;
+    padding: 0;
 }
 
 /* ---- Root Shell ---- */
@@ -98,7 +95,6 @@ body {
     font-weight: 700;
     color: var(--accent);
     font-family: 'Courier New', Courier, monospace;
-    text-transform: none;
     letter-spacing: 1px;
     text-align: left;
     margin-bottom: 10px;

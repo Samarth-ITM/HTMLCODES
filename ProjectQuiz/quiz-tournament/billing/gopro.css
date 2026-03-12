@@ -1,7 +1,4 @@
-/* billing.css */
-
 body {
-    background-color: var(--bg-main);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +14,7 @@ body {
     gap: 2rem;
 }
 
-.billing-header {
-    text-align: left;
-}
+.billing-header { text-align: left; }
 
 .billing-header h2 {
     font-size: 32px;
@@ -40,9 +35,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .checkout-grid {
-        grid-template-columns: 1fr;
-    }
+    .checkout-grid { grid-template-columns: 1fr; }
 }
 
 .summary-card, .payment-card {
@@ -80,9 +73,7 @@ body {
     margin: 1.5rem 0;
 }
 
-.input-group {
-    margin-bottom: 1.5rem;
-}
+.input-group { margin-bottom: 1.5rem; }
 
 .input-row {
     display: flex;
@@ -109,9 +100,7 @@ input {
     font-family: inherit;
 }
 
-input:focus {
-    border-color: var(--accent);
-}
+input:focus { border-color: var(--accent); }
 
 .pay-btn {
     margin-top: 1rem;
@@ -128,39 +117,5 @@ input:focus {
 
 .cancel-btn:hover {
     background: var(--bg-muted);
-    border-color: var(--border-color);
     color: var(--text-primary);
-}
-
-/* Modal */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.success-card {
-    text-align: center;
-}
-
-/* using standard styling instead of emoji */
-.success-icon {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-}
-
-.success-card h2 {
-    color: var(--text-primary);
-    margin-bottom: 1rem;
-}
-
-.success-card p {
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
 }

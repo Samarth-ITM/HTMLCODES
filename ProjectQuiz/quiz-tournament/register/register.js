@@ -15,6 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         saveCurrentPlayer({ name, id: newId, attemptsUsed: 0, bestScore: 0 });
-        window.location.href = '../quiz/quiz.html';
+        window.location.href = '../quiz/start.html';
     });
 });

@@ -1,10 +1,6 @@
-/* ---- Override base.css body centering ---- */
 body {
-    display: block !important;
-    padding: 0 !important;
-    align-items: unset !important;
-    justify-content: unset !important;
-    min-height: 100vh !important;
+    display: block;
+    padding: 0;
 }
 
 /* ---- Shared hide utility ---- */
@@ -19,107 +15,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-}
-
-
-.start-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 14px;
-    padding: 44px 48px;
-    width: 100%;
-    max-width: 540px;
-    text-align: center;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-}
-
-.start-icon {
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 16px;
-}
-
-/* Override base.css h1 */
-.start-card h1.start-title {
-    font-size: 26px !important;
-    color: var(--accent) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 3px !important;
-    text-align: center !important;
-    margin-bottom: 8px !important;
-}
-
-.start-sub {
-    font-size: 13px !important;
-    color: var(--text-secondary) !important;
-    line-height: 1.6 !important;
-    margin-bottom: 28px !important;
-    font-family: 'Courier New', monospace;
-}
-
-.rules-box {
-    background: var(--bg-main);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 18px 22px;
-    text-align: left;
-    margin-bottom: 22px;
-}
-
-.rules-heading {
-    font-size: 11px !important;
-    font-weight: 700 !important;
-    color: var(--warning-orange) !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    margin-bottom: 12px !important;
-    font-family: 'Courier New', monospace;
-}
-
-.rules-list {
-    list-style: disc;
-    padding-left: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.rules-list li {
-    font-size: 13px !important;
-    color: var(--text-secondary) !important;
-    line-height: 1.5;
-    margin: 0 !important;
-}
-
-.rules-list li strong {
-    color: var(--text-primary);
-}
-
-.start-meta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 13px 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    background: var(--bg-muted);
-    margin-bottom: 24px;
-}
-
-.meta-label {
-    font-size: 12px;
-    color: var(--text-secondary);
-    font-family: 'Courier New', monospace;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.meta-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--accent);
-    font-family: 'Courier New', monospace;
 }
 
 
@@ -180,24 +75,23 @@ body {
 }
 
 .bracket-eyebrow {
-    font-size: 11px !important;
-    font-weight: 600 !important;
-    letter-spacing: 2.5px !important;
-    text-transform: uppercase !important;
-    color: var(--accent) !important;
-    margin-bottom: 6px !important;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
     font-family: 'Courier New', monospace;
 }
 
-/* Override base.css h2 */
 .bracket-card h2.bracket-title {
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    color: var(--text-primary) !important;
-    text-align: left !important;
-    letter-spacing: 0 !important;
-    text-transform: none !important;
-    margin-bottom: 28px !important;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: left;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 28px;
 }
 
 .bracket-container {
@@ -395,17 +289,16 @@ body {
     gap: 0;
 }
 
-/* Override base.css h2 in question card */
 .question-card h2.question-text {
-    font-size: 23px !important;
-    font-weight: 600 !important;
-    color: var(--text-primary) !important;
-    text-align: left !important;
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    line-height: 1.75 !important;
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1.75;
+    margin-bottom: 0;
+    margin-top: 0;
     padding: 24px 32px;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -574,27 +467,27 @@ body {
 }
 
 .exp-result {
-    font-size: 15px !important;
-    font-weight: 700 !important;
-    margin-bottom: 12px !important;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 12px;
     font-family: 'Courier New', monospace;
 }
 
 .exp-label {
-    font-size: 10px !important;
-    text-transform: uppercase !important;
-    letter-spacing: 1.5px !important;
-    color: var(--text-secondary) !important;
-    margin-bottom: 6px !important;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
     font-family: 'Courier New', monospace;
 }
 
 .exp-body {
-    font-size: 13px !important;
-    line-height: 1.7 !important;
-    color: var(--text-secondary) !important;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-secondary);
     font-family: 'Courier New', monospace;
-    margin: 0 !important;
+    margin: 0;
 }
 
 
@@ -616,19 +509,19 @@ body {
 }
 
 .champion-card h1.champ-title {
-    font-size: 30px !important;
-    font-weight: 900 !important;
-    color: #f59e0b !important;
-    letter-spacing: 5px !important;
-    text-transform: uppercase !important;
-    text-align: center !important;
-    margin-bottom: 8px !important;
+    font-size: 30px;
+    font-weight: 900;
+    color: #f59e0b;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .champ-sub {
-    font-size: 13px !important;
-    color: var(--text-secondary) !important;
-    margin-bottom: 28px !important;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 28px;
     font-family: 'Courier New', monospace;
 }
 
@@ -705,25 +598,25 @@ body {
 }
 
 .modal-card h2.modal-title {
-    font-size: 22px !important;
-    text-align: center !important;
-    margin-bottom: 0 !important;
-    color: var(--accent) !important;
-    letter-spacing: 1px !important;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0;
+    color: var(--accent);
+    letter-spacing: 1px;
 }
 
 .modal-message {
-    font-size: 14px !important;
-    color: var(--text-secondary) !important;
+    font-size: 14px;
+    color: var(--text-secondary);
     font-family: 'Courier New', monospace;
-    margin: 0 !important;
+    margin: 0;
 }
 
 .modal-score {
-    font-size: 13px !important;
-    color: var(--text-secondary) !important;
+    font-size: 13px;
+    color: var(--text-secondary);
     font-family: 'Courier New', monospace;
-    margin: 0 !important;
+    margin: 0;
 }
 
 .modal-score strong {
@@ -744,5 +637,5 @@ body {
     .option-btn::before { width: 32px; height: 32px; min-width: 32px; line-height: 32px; font-size: 13px; }
     .options-grid { gap: 10px; grid-auto-rows: minmax(90px, 110px); }
     .start-card, .bracket-card, .champion-card { padding: 32px 22px; }
-    .bracket-card h2.bracket-title { font-size: 18px !important; }
+    .bracket-card h2.bracket-title { font-size: 18px; }
 }

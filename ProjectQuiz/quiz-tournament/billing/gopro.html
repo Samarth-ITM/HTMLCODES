@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="../assets/landing/brandinglogo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Pro - Quiz Tournament</title>
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="gopro.css">
+</head>
+<body>
+    <div class="billing-container">
+        <header class="billing-header">
+            <h2>Secure Checkout</h2>
+            <p>Complete your purchase to unlock premium features.</p>
+        </header>
+
+        <div class="checkout-grid">
+            <div class="card summary-card">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Monthly Pro</span>
+                    <span>₹2000 / mo</span>
+                </div>
+                <hr class="divider">
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span>₹2000</span>
+                </div>
+            </div>
+
+            <div class="card payment-card">
+                <h3>Payment Details</h3>
+                <form id="billingForm">
+                    <div class="input-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" placeholder="John Doe" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group" style="flex: 1;">
+                            <label for="expiry">Expiry (MM/YY)</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+                        </div>
+                        <div class="input-group" style="flex: 1;">
+                            <label for="cvv">CVV</label>
+                            <input type="password" id="cvv" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn pay-btn">Pay ₹2000</button>
+                    <button type="button" class="btn cancel-btn" onclick="window.location.href='../index.html'">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="gopro.js"></script>
+</body>
+</html>

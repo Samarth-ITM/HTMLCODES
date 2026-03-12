@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startQuizBtn.style.opacity = '0.5';
         startQuizBtn.style.cursor = 'not-allowed';
     } else {
-        startQuizBtn.addEventListener('click', () => window.location.href = '../quiz/quiz.html');
+        startQuizBtn.addEventListener('click', () => window.location.href = '../quiz/start.html');
     }
 
     document.getElementById('viewLeaderboardBtn').addEventListener('click', () => window.location.href = '../leaderboard/leaderboard.html');

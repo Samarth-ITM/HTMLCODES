@@ -44,9 +44,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Show how many attempts they have left on the start screen
-    document.getElementById('startAttempts').textContent = MAX_ATTEMPTS - player.attemptsUsed;
-
     // Load the question bank from the JSON file
     try {
         const response = await fetch('../data/questions.json');
@@ -55,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Failed to load questions', error);
     }
 
-    document.getElementById('realStartBtn').addEventListener('click', startTournament);
+    startTournament();
 });
 
 // ─── Tournament Start ─────────────────────────────────────────────────────────
@@ -64,13 +61,8 @@ async function startTournament() {
     // Try to go fullscreen (silently ignore if the browser blocks it)
     try { await document.documentElement.requestFullscreen(); } catch (e) {}
 
-    // Use up one attempt and save it immediately
     player.attemptsUsed++;
     saveCurrentPlayer(player);
-
-    // Switch from the start screen to the quiz container
-    document.getElementById('startScreen').classList.add('hidden');
-    document.getElementById('quizContainer').classList.remove('hidden');
 
     // Listen for tab switching (anti-cheat)
     document.addEventListener('visibilitychange', handleVisibilityChange);

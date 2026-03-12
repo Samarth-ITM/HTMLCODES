@@ -116,53 +116,24 @@ quiz-tournament/
 
 ---
 
-## Running Locally
-
-The app uses `fetch()` to load `questions.json`, which browsers block over `file://`. You need a local server.
-
-**VS Code — Live Server extension:**
-1. Install the Live Server extension
-2. Right-click `index.html` → Open with Live Server
-
-**Terminal:**
-```bash
-# Node
-npx http-server .
-
-# Python
-python3 -m http.server
-```
-Then open `http://localhost:8080` in your browser.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 🆕 Recent Updates & Fixes (Constraint Compliance)
-The following critical features and fixes have been recently implemented to fully satisfy the problem statement requirements:
-
-### ✨ Match Reporting & CSV Exports
-- **Comprehensive participant report**: Upgraded the `renderReport()` functionality in both `leaderboard.js` and `forum.js`. Previously displaying only incorrect answers, it now maps **all** questions faced by the user during the tournament, alongside their total match score.
-- **CSV Data Integrity**: Maintained full compliance with the CSV download reporting feature, ensuring all raw participant data is easily exportable.
-
-### 🛡️ Security & Formatting Fixes (HTML Escaping)
-- **Raw HTML Rendering Bug Fix**: Prevented raw data strings (like `<video>`) from breaking DOM rendering by accidentally being processed as HTML elements.
-- **Sanitization Strategy**: Successfully introduced global `escapeHTML()` regex formatters (`replace(/</g, '&lt;')`) into leaderboard and forum innerHTML generators to securely render code-based correct answers.
-
-### 💳 Simulated Billing & Checkout Funnel
-- **Dynamic Routing**: Activated the dormant premium capability tiers ("One-Time Host" & "Monthly Pro") in the `index.html` file, mapping them via URL query parameters (`?plan=host` and `?plan=pro`).
-- **Billing Architecture**: Successfully scaffolded a standalone fake checkout infrastructure (`billing/billing.html`, `billing.css`, `billing.js`).
-- **Checkout Simulation**: Engineered standard front-end format masking (credit card spacing), dynamic pricing displays reading from `URLSearchParams`, and a simulated timeout verification state concluding in a functional Success Modal.
-
-### 🎨 UI/UX Improvements
-- **Powerup Tooltips**: Re-engineered the UI in the primary landing page to explicitly outline the core powerup logic ("2x Double Points", "50/50", "Immunity") tightly formatted via a responsive Flexbox design constraint in `landing.css`.
-- **Match Sequence Unblocking**: Diagnosed and repaired a hard-lock UI collision in `quiz/quiz.js` where the result modal improperly rendered over the champion winning screen, completely fixing the `finishRound()` end-game execution block.
+## Future Enhancements
+- Add more questions and categories
+- Implement a timer bar visual
+- Add sound effects for correct/wrong answers and powerups
+- Make it mobile responsive
+- Add animations for transitions between screens
+- Implement a more robust anti-cheat system (e.g. webcam monitoring, IP tracking)
+- Add user authentication and backend storage for a real multiplayer experience 
+- Implement different question types (e.g. true/false, fill in the blank)
+- Add more powerups and strategic elements (e.g. skip question, steal points)
+- Create a more polished UI with better visuals and animations
+- Add a practice mode for players to try out questions without affecting their tournament score
+- Implement a "spectator mode" where non-players can watch the tournament progress in real-time
+- Add support for multiple simultaneous tournaments with different themes/categories
+- Implement a referral system to encourage players to invite friends
+- Add a "Hall of Fame" page showcasing past champions and their scores
+- Implement a more detailed player profile page with stats, past performance, and earned badges/trophies
+- Add a "challenge a friend" feature where players can directly compete against friends in a mini
+- Implement a more robust forum with categories, upvoting, and moderation features
+- Add support for multiple languages and localization
+- Implement a more secure billing system with real payment processing for the Go Pro and Select Plan options
